@@ -9,8 +9,8 @@ public class TicTacToe {
             return false;
         }
 
-        for (int cell: board) {
-            if ( cell < -2 || cell > 2) {
+        for (int cell : board) {
+            if (cell <= -2 || cell >= 2) {
                 return false;
             }
         }
@@ -19,7 +19,7 @@ public class TicTacToe {
     }
 
     static void printBoard(int[] board) {
-        System.out.println(board2Board(board, new char[] {'X', '.', 'O'}));
+        System.out.println(board2Board(board, new char[]{'X', '.', 'O'}));
     }
 
     static String board2Board(int[] board, char[] symbol) {
